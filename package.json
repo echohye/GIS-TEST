@@ -1,0 +1,53 @@
+{
+  "name": "echohye",
+  "private": true,
+  "version": "0.0.1",
+  "description": "GIS地图测试",
+  "author": "echohye",
+  "license": "MIT",
+  "scripts": {
+    "i": "pnpm install",
+    "dev": "vite",
+    "build": "vite build",
+    "build:pro": "node --max_old_space_size=8192 ./node_modules/vite/bin/vite.js build --mode pro",
+    "preview": "vite preview",
+    "clean": "npx rimraf node_modules",
+    "clean:cache": "npx rimraf node_modules/.cache",
+    "lint:format": "prettier --write --log-level warn \"src/**/*.{js,css,less,scss,vue,html,md}\"  \"vite/**/*.js\""
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.1.0",
+    "@vueuse/core": "^10.3.0",
+    "axios": "^1.4.0",
+    "element-plus": "^2.3.9",
+    "file-saver": "^2.0.5",
+    "js-cookie": "^3.0.5",
+    "jsencrypt": "^3.3.2",
+    "leaflet": "^1.9.4",
+    "leaflet.vectorgrid": "^1.3.0",
+    "mapbox-gl": "^2.15.0",
+    "mapbox-gl-leaflet": "^0.0.16",
+    "maplibre-gl": "^3.6.2",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.1.6",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vue/compiler-sfc": "^3.3.4",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "prettier": "^3.2.4",
+    "sass": "^1.65.1",
+    "tailwindcss": "^3.3.5",
+    "unocss": "^0.58.3",
+    "unplugin-auto-import": "^0.16.6",
+    "unplugin-vue-components": "^0.26.0",
+    "vite": "^4.4.5",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-progress": "^0.0.7",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vite-plugin-vue-setup-extend": "^0.4.0"
+  }
+}
